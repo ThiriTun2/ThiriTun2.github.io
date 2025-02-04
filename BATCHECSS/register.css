@@ -1,0 +1,14 @@
+#mybody{
+    background-color: rgb(107,169,148);
+}
+.heading{
+    text-align: center;
+    color:red;
+}
+#myform{
+    width: 40%;
+    margin: auto;
+}
+input{type="text"}{
+    width: 100;
+}
