@@ -9,6 +9,47 @@
     width: 40%;
     margin: auto;
 }
-input{type="text"}{
-    width: 100;
+input[type="text"],input[type="email"],input[type="date"],input[type="number"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-top-left-radius: 5px;
+}
+input[type="text"],focus,input[type="email"]:focus,input[type="date"]:focaus,input[type="number"]:focus,#education:focus{
+    border: 4px sold gray;
+}
+input[type="radio"]:checked + label{
+    color: red;
+    letter-spacing:10px;
+}
+input[type="checkbox"]:enabled + label{
+    color: red;
+    font-style: italic;
+
+}
+input[type="checkbox"]:disabled  + label{
+    font-style: gray;
+}
+ul li:first-child{
+    background-color: yellow;
+}
+ul li:last-child{
+    background-color: red;
+}
+ul li:nth-child(5){
+    background-color: green;
+}
+p:empty{
+    height: 20px;
+    background-color: black;
+}
+.register_btn{
+width: 150px;
+height: 43px;
+border-radius: 5px;
+}
+.register_btn:hover{
+background-color: black;
+color:white;
+cursor: pointer;
 }
