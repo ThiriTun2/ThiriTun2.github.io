@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Product Details</h1>
+    <div class="product-details">
+        <div id="notebook" class="subcategory">
+          <div class="product-item">
+            <img src="images/book1.jpg" alt="Book 1">
+            <h3>Book 1</h3>
+            <div class="price">3500MMK</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="images/book2.jpg" alt="Book 2">
+            <h3>Book 2</h3>
+            <div class="price">3500MMK</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+          <img src="images/book3.jpg" alt="Book 2">
+          <h3>Book 2</h3>
+          <div class="price">5500MMK</div>
+          <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item">
+          <img src="images/book4.jpg" alt="Book 2">
+          <h3>Book 2</h3>
+          <div class="price">2000MMK</div>
+          <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item">
+          <img src="images/book5.jpg" alt="Book 2">
+          <h3>Book 2</h3>
+          <div class="price">3500MMK</div>
+          <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item">
+          <img src="images/book6.jpg" alt="Book 2">
+          <h3>Book 2</h3>
+          <div class="price">2000MMK</div>
+          <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item">
+          <img src="images/book7.jpg" alt="Book 2">
+          <h3>Book 2</h3>
+          <div class="price">1500MMK</div>
+          <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product-item"></div>
+                  <img src="images/pen2.png" alt="pen 2">
+                  <h3>pen2</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen3.jpg" alt="pen 3">
+                  <h3>pen3</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen4.jpg"alt="">
+                  <h3>pen4</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen9.jpg" alt="pen 9">
+                  <h3>pen9</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen10.jpg" alt="pen 10">
+                  <h3>pen2</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen6.jpg" alt="pen 6">
+                  <h3>pen2</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen7.jpg" alt="pen 7">
+                  <h3>pen7</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen8.jpg" alt="pen 8">
+                  <h3>pen8</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                  <img src="images/pen11.jpg" alt="pen 11">
+                  <h3>pen11</h3>
+                  <p>A fascinating biography of a historical figure.</p>
+                  <div class="price">$12.00</div>
+                  <button class="btn">Add to Cart</button>
+              </div>
+
+            <div class="trend-item">
+                <img src="images/Pencil Case.webp" alt="">
+            </div>
+                <div class="trend-item">
+                    <img src="images/Trinidad.jpg" alt="">
+            </div>
+                <div class="trend-item">
+                    <img src="images/Double Tape.jpg" alt="">
+            </div>
+                <div class="trend-item">
+                    <img src="images/Textbook.webp" alt="">
+                </div>
+
+                <div class="trend-item">
+                    <img src="images/bag.jpg" alt=""> 
+
+            </div>
+
+            </div>
+            </section>
+            <script> 
+            const urlParams = new URLSearchParams(window.location.search);
+const productName = urlParams.get('product');
+
+if (productName === 'notebook') {
+  
+  
+  document.getElementById('notebook').style.display = 'block';
+  document.getElementById('pen').style.display = 'none';
+  document.getElementById('pencil').style.display = 'none';
+} else if (productName === 'pen') {
+  // Pen တွေအတွက် code ကို ဒီနေရာမှာ ထည့်ပါ။
+  document.getElementById('pen').style.display = 'block';
+  document.getElementById('notebook').style.display = 'none';
+  document.getElementById('pencil').style.display = 'none';
+} else if (productName === 'pencil') {
+  // Pencil တွေအတွက် code ကို ဒီနေရာမှာ ထည့်ပါ။
+  document.getElementById('pencil').style.display = 'block';
+  document.getElementById('notebook').style.display = 'none';
+  document.getElementById('pen').style.display = 'none';
+}            
+          
+
+</body>
+</html>
+
+
