@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propery And Method </title>
+</head>
+<body>
+<h1>Propery And Method</h1>
+<h2 id="createTextNodeId"></h2>
+<p id="sestAtt">This si Set Attribute</p>
+<p id="getAtt" style ="color : green;font-style: italic;" class="getAttribute"></p>
+
+
+<button onclick="createText()">createTextNode</button>
+<button onclick="createElementLesson()">createElementLessonNode</button>
+<script>
+    function createText(){
+        function createElementLesson(){
+            function createSetAtt(){
+                let setAttElement=document.getElementById('setAt');
+                setAttElement.setAttribute('Style','color:red;')
+
+            }
+            function createGetAtt(){
+                let getAttElement=document.getElementById('getAt');
+                console.log(getAttElement.getAttribute('Style'));
+            }
+        }
+    }
+    function createText(){
+        //alert('hello');
+        let createTextNogdeId=document.getElementById('createTextNodeId');
+        // createTExtNodeId.innerText="Create Text Node";
+        let createText =document.createTextNode('Create Text Node');
+        createTextNodeId.appendId(createText);
+    }
+    function createElementLesson{
+        //alert("Ok");
+        let h3=document.createElement('h3');
+        //console.log(h3);
+        h3.innerText="This is Create Element";
+        //console.log(h3);
+        document.body.appendchild(h3);
+    }
+</script>
+    
+</body>
+</html>

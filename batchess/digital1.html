@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <h1 style="font-size: 50px;">Digital Clock</h1>
+    <p id="date" style="font-size: 30px;"></p>
+    <p id="time" style="font-size: 60px; font-weight: bold;"></p>
+
+    <script>
+        function updateClock() {
+            let timeElement = document.getElementById('time');
+            let dateElement = document.getElementById('date');
+            let date = new Date();
+
+           
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            let ampm = hours >= 12 ? 'PM' : 'AM';
+
+            hours = hours % 12 || 12; 
+
+            let formattedTime = (hours < 10 ? '0' : '') + hours + ":" +
+                                (minutes < 10 ? '0' : '') + minutes + ":" +
+                                (seconds < 10 ? '0' : '') + seconds + " " + ampm;
+
+            timeElement.innerHTML = formattedTime;
+
+            let day = date.getDate();
+            let month = date.getMonth() + 1; 
+            let year = date.getFullYear();
+
+            let formattedDate = (day < 10 ? '0' : '') + day + "/" +
+                                (month < 10 ? '0' : '') + month + "/" + year;
+
+            dateElement.innerHTML = "" + formattedDate;
+        }
+
+        setInterval(updateClock, 1000); 
+        updateClock(); 
+    </script>
+</body>
+</html>
